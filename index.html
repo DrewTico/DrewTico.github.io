@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create an "About Me" Page on GitHub Pages</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Icons from FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #1976d2;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #1565c0;
+        }
+        .step {
+            margin-bottom: 40px;
+        }
+        .step img {
+            max-width: 100%;
+            display: block;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .step p {
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+        .step-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+        /* Styling for buttons */
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1976d2;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        a.button:hover {
+            background-color: #0d47a1;
+        }
+        /* Styling footer */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        /* Icons with numbers */
+        .step-number i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Create an "About Me" Page on GitHub Pages</h1>
+
+        <!-- Step 1: Sign up for GitHub -->
+        <div class="step">
+            <div class="step-number">
+                <i class="fas fa-user-plus"></i> Step 1
+            </div>
+            <h2>Create a GitHub Account</h2>
+            <p>Go to <a href="https://github.com" target="_blank" class="button">GitHub Sign Up</a> and sign up. Follow the prompts to create your account by entering your username, email, and password.</p>
+            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/screenshots/Screenshot1.PNG?raw=true" alt="GitHub Sign Up Screenshot">
+        </div>
+
+        <!-- Step 2: Create a New Repository -->
+        <div class="step">
+            <div class="step-number">
+                <i class="fas fa-plus-circle"></i> Step 2
+            </div>
+            <h2>Create a New Repository</h2>
+            <p>Once logged in, click the "+" icon in the top-right corner, select "New repository", and name it <strong>username.github.io</strong> (replace "username" with your actual GitHub username).</p>
+            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/screenshots/Screenshot2.PNG?raw=true" alt="New Repository Creation Screenshot">
+        </div>
+
+        <!-- Step 3: Create or Edit index.html -->
+        <div class="step">
+            <div class="step-number">
+                <i class="fas fa-file-alt"></i> Step 3
+            </div>
+            <h2>Create or Edit index.html</h2>
+            <p>Click on "Add file" > "Create new file", and name it <strong>index.html</strong>. Enter the following HTML code for your "About Me" page:</p>
+            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/screenshots/Screenshot5.PNG?raw=true" alt="Create index.html Screenshot">
+        </div>
+
+        <!-- Step 4: Commit the Changes -->
+        <div class="step">
+            <div class="step-number">
+                <i class="fas fa-save"></i> Step 4
+            </div>
+            <h2>Commit Your Changes</h2>
+            <p>Scroll down to the "Commit new file" section, add a commit message like "Create About Me page", and click "Commit new file".</p>
+            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/screenshots/Screenshot6.PNG?raw=true" alt="Commit Changes Screenshot">
+        </div>
+
+        <!-- Step 5: View Your Website -->
+        <div class="step">
+            <div class="step-number">
+                <i class="fas fa-globe"></i> Step 5
+            </div>
+            <h2>View Your Website</h2>
+            <p>Go to <strong>https://username.github.io</strong> in your browser (replace "username" with your GitHub username). Your "About Me" page should now be live!</p>
+            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/screenshots/Screenshot7.PNG?raw=true" alt="Live Website Screenshot">
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Andrew Castro-Guerrero | Powered by GitHub Pages</p>
+        </div>
+    </div>
+</body>
+</html>
