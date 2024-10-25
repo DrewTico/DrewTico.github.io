@@ -4,80 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Create an "About Me" Page on GitHub Pages</title>
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <!-- Icons from FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* General Page Styling */
         body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
             color: #333;
             margin: 0;
             padding: 0;
         }
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
         }
         h1 {
-            text-align: center;
-            color: #1976d2;
+            color: #004b8d;
             font-size: 2.5em;
+            text-align: center;
             margin-bottom: 20px;
         }
         h2 {
-            color: #1565c0;
+            color: #007acc;
+            font-size: 2em;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        p, li {
+            font-size: 1.1em;
+            line-height: 1.8;
         }
         .step {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .step img {
             max-width: 100%;
+            height: auto;
             display: block;
-            margin: 15px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .step p {
-            font-size: 1.1em;
-            line-height: 1.7;
-        }
-        .step-number {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #1976d2;
-            margin-bottom: 10px;
-        }
-        /* Styling for buttons */
-        a.button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #1976d2;
-            color: #fff;
-            text-decoration: none;
+            margin: 10px 0;
+            border: 2px solid #004b8d;
             border-radius: 5px;
-            font-size: 1em;
-            transition: background-color 0.3s ease;
         }
-        a.button:hover {
-            background-color: #0d47a1;
-        }
-        /* Styling footer */
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 0.9em;
+        .note {
+            font-style: italic;
             color: #555;
         }
-        /* Icons with numbers */
-        .step-number i {
-            margin-right: 10px;
+        .troubleshooting-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+        a {
+            color: #004b8d;
+            text-decoration: none;
+        }
+        .toc {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #e6f7ff;
+            border-radius: 8px;
+        }
+        .toc a {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        blockquote {
+            background-color: #f0f8ff;
+            border-left: 5px solid #004b8d;
+            padding: 10px;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -85,81 +85,81 @@
     <div class="container">
         <h1>How to Create an "About Me" Page on GitHub Pages</h1>
 
-        <!-- Step 1: Sign up for GitHub -->
-        <div class="step">
-            <div class="step-number">
-                <i class="fas fa-user-plus"></i> Step 1
-            </div>
-            <h2>Create a GitHub Account</h2>
-            <p>Go to <a href="https://github.com" target="_blank" class="button">GitHub Sign Up</a> and sign up. Follow the prompts to create your account by entering your username, email, and password.</p>
-            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot1.PNG?raw=true" alt="GitHub Sign Up Screenshot">
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <a href="#step1">Step 1: Create a GitHub Account & Repository</a>
+            <a href="#step2">Step 2: Set Up GitHub Pages</a>
+            <a href="#step3">Step 3: Customize Your 'About Me' Page</a>
+            <a href="#step4">Step 4: Commit and Publish</a>
+            <a href="#troubleshooting">Troubleshooting</a>
         </div>
 
-        <!-- Step 2: Create a New Repository -->
-        <div class="step">
-            <div class="step-number">
-                <i class="fas fa-plus-circle"></i> Step 2
-            </div>
-            <h2>Create a New Repository</h2>
-            <p>Once logged in, click the "+" icon in the top-right corner, select "New repository", and name it <strong>username.github.io</strong> (replace "username" with your actual GitHub username).</p>
-            <p>In this step, make sure to check the box labeled "<strong>Add a README file</strong>" before clicking "Create repository". This will make it easier to manage your repository later.</p>
-            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot2.PNG?raw=true" alt="New Repository Creation Screenshot">
+        <!-- Step 1 -->
+        <div id="step1" class="step">
+            <h2>Step 1: Create a GitHub Account & Repository</h2>
+            <p><strong>Welcome!</strong> We're about to dive into creating your very own personal website using GitHub Pages. Don’t worry if this feels overwhelming — we're here to guide you step by step. Let’s start by creating a GitHub account (if you don’t have one) and your first repository.</p>
+            
+            <p><strong>Creating an Account:</strong> If you don’t already have a GitHub account, go to <a href="https://github.com">GitHub.com</a> and sign up. It's free! Once you've registered, log in to your new account.</p>
+
+            <p><strong>Creating Your Repository:</strong> Now, click on the “New Repository” button (you can find it on your dashboard after logging in).</p>
+            <blockquote><em>Important:</em> You must name your repository like this: <strong>yourusername.github.io</strong>, replacing "yourusername" with your actual GitHub username. This exact name is how GitHub knows you’re creating a website.</blockquote>
+            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot3.PNG?raw=true" alt="Screenshot of creating a new repository on GitHub">
+            <p class="note">Tip: Make sure the repository is set to <strong>public</strong>, so your website will be visible to everyone!</p>
         </div>
 
-        <!-- Step 3: Create or Edit index.html -->
-        <div class="step">
-            <div class="step-number">
-                <i class="fas fa-file-alt"></i> Step 3
-            </div>
-            <h2>Create or Edit index.html</h2>
-            <p>Click on "Add file" > "Create new file", and name it <strong>index.html</strong>. Copy and paste the following code into the file:</p>
+        <!-- Step 2 -->
+        <div id="step2" class="step">
+            <h2>Step 2: Set Up GitHub Pages</h2>
+            <p>Great job creating your repository! Now let’s set it up as a GitHub Pages site.</p>
 
-            <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;About Me&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;About Me&lt;/h1&gt;
-    &lt;p&gt;Hi! My name is [Your Name]. I am a [Your Profession/Student Status] with a passion for [Your Interests].&lt;/p&gt;
-    &lt;p&gt;I enjoy [Your Hobbies] and I am currently learning about [What You're Learning].&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-            </code></pre>
+            <p>Go to your repository’s settings by clicking on the “Settings” tab. Scroll down until you find the "GitHub Pages" section.</p>
 
-            <p>Replace the placeholders in brackets (e.g., [Your Name]) with your information. Here's an explanation:</p>
+            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot8.PNG?raw=true" alt="Screenshot of GitHub Pages setup in settings">
+            <blockquote>Under “Source”, select the <strong>main</strong> branch (this is where all your code and changes will go).</blockquote>
+
+            <p class="note">Be patient: It might take up to 5 minutes for your new site to become available online. Refresh the page after a few minutes to check.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="step3" class="step">
+            <h2>Step 3: Customize Your 'About Me' Page</h2>
+            <p>Now for the fun part — let's add some content to your website! You’ll need to edit the default <code>index.html</code> file. Think of this as the homepage for your site, where you’ll introduce yourself.</p>
+
+            <p>To start, click on the <strong>index.html</strong> file in your repository. Now, replace the placeholder text with your own information.</p>
+            <blockquote><em>Pro Tip:</em> Make sure to replace the "username" placeholders with your actual GitHub username.</blockquote>
+
+            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot5.PNG?raw=true" alt="Editing index.html on GitHub">
+            <p>Here’s an example of what you can add:</p>
             <ul>
-                <li><strong>[Your Name]</strong> – Write your name here.</li>
-                <li><strong>[Your Profession/Student Status]</strong> – Describe your job or mention that you're a student.</li>
-                <li><strong>[Your Interests]</strong> – List a few things you're passionate about.</li>
-                <li><strong>[Your Hobbies]</strong> – Write about the hobbies or activities you enjoy.</li>
-                <li><strong>[What You're Learning]</strong> – Share what you're currently studying or learning.</li>
+                <li>Your name</li>
+                <li>A brief bio (e.g., "I’m a web developer passionate about building websites!")</li>
+                <li>A link to your social media profiles</li>
             </ul>
-            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot5.PNG?raw=true" alt="Create index.html Screenshot">
+
+            <p class="note">Remember to organize your content with headings (like <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code>) and bullet points to keep it neat and readable.</p>
         </div>
 
-        <!-- Step 4: Commit the Changes -->
-        <div class="step">
-            <div class="step-number">
-                <i class="fas fa-save"></i> Step 4
-            </div>
-            <h2>Commit Your Changes</h2>
-            <p>Scroll down to the "Commit new file" section, add a commit message like "Create About Me page", and click "Commit new file".</p>
-            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot6.PNG?raw=true" alt="Commit Changes Screenshot">
+        <!-- Step 4 -->
+        <div id="step4" class="step">
+            <h2>Step 4: Commit and Publish</h2>
+            <p>Ready to see your changes live? You’re almost there! After editing your <code>index.html</code> file, scroll to the top and click the <strong>“Commit changes”</strong> button.</p>
+
+            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot6.PNG?raw=true" alt="Committing changes on GitHub">
+            <blockquote>Make sure to add a meaningful commit message (e.g., “Updated About Me page”) to keep track of changes.</blockquote>
+            
+            <p class="note">Once committed, it may take a minute or two for the changes to appear on your live site. Just refresh your browser after a bit to see the magic happen!</p>
         </div>
 
-        <!-- Step 5: View Your Website -->
-        <div class="step">
-            <div class="step-number">
-                <i class="fas fa-globe"></i> Step 5
-            </div>
-            <h2>View Your Website</h2>
-            <p>Go to <strong>https://username.github.io</strong> in your browser (replace "username" with your GitHub username). Your "About Me" page should now be live!</p>
-            <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot7.PNG?raw=true" alt="Live Website Screenshot">
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2024 Andrew Castro-Guerrero | Powered by GitHub Pages</p>
+        <!-- Troubleshooting -->
+        <div id="troubleshooting" class="step">
+            <h2>Troubleshooting</h2>
+            <p>If something’s not working quite right, don’t panic! Here are a few common issues and how to solve them:</p>
+            <ul>
+                <li><strong>Website not showing up:</strong> Wait a few minutes, then refresh. It can take time for GitHub Pages to publish the site.</li>
+                <li><strong>Changes not appearing:</strong> Double-check that you’ve committed your changes to the correct branch (usually <em>main</em>).</li>
+                <li><a href="troubleshooting.html">Need more help? Visit the full troubleshooting page here.</a></li>
+            </ul>
         </div>
     </div>
 </body>
