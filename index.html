@@ -10,34 +10,54 @@
             padding: 0;
             height: 100%;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom right, #004b8d, #00c6ff);
+            background: linear-gradient(120deg, #f093fb, #f5576c, #4facfe, #00f2fe);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
         }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         .cover-container {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.15);
             padding: 60px;
             border-radius: 15px;
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(10px);
             transition: transform 0.3s ease;
         }
+
         .cover-container:hover {
             transform: translateY(-10px);
         }
+
         h1 {
             font-size: 4em;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
         }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            color: #dddddd;
+            font-style: italic;
+        }
+
         p {
             font-size: 1.8em;
             margin-bottom: 40px;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
+
         .btn {
             padding: 15px 40px;
             font-size: 1.5em;
@@ -50,17 +70,25 @@
             display: inline-block;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
         .btn:hover {
             background-color: #005f99;
             transform: scale(1.1);
         }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 3em;
             }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
             p {
                 font-size: 1.2em;
             }
+
             .btn {
                 font-size: 1.2em;
             }
@@ -70,6 +98,7 @@
 <body>
     <div class="cover-container">
         <h1>Welcome to My GitHub Page</h1>
+        <h2>Andrew Castro-Guerrero</h2>
         <p>Explore my projects, learn more, and connect with me!</p>
         <a href="instructions.html" class="btn">Instructions</a>
         <a href="faq.html" class="btn">FAQ</a>
