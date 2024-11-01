@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Create an "About Me" Page on GitHub Pages</title>
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f7fc;
+            background-color: #f0f4fb;
             color: #333;
             margin: 0;
             padding: 0;
@@ -16,76 +17,114 @@
             width: 80%;
             margin: 0 auto;
             padding: 20px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
         }
         h1 {
-            color: #004b8d;
-            font-size: 2.5em;
+            color: #5d8fe4;
+            font-size: 2.8em;
             text-align: center;
             margin-bottom: 20px;
+            font-weight: bold;
         }
         h2 {
-            color: #007acc;
+            color: #4c7cc4;
             font-size: 2em;
+            margin-top: 30px;
+            border-bottom: 2px solid #5d8fe4;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #333;
+            font-size: 1.4em;
+            margin-top: 20px;
+        }
+        p, li {
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #444;
         }
         ul {
             padding-left: 20px;
+            list-style-type: disc;
         }
-        p, li {
-            font-size: 1.1em;
-            line-height: 1.8;
-        }
+        /* Step Box Styles */
         .step {
             margin-bottom: 30px;
             padding: 20px;
             background-color: #ffffff;
+            border: 2px solid #e6f0fb;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
         }
         .step img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 10px 0;
-            border: 2px solid #004b8d;
+            border: 2px solid #5d8fe4;
             border-radius: 5px;
         }
-        .note {
+        .note, .warning {
             font-style: italic;
-            color: #555;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
         }
-        .troubleshooting-link {
-            margin-top: 20px;
-            text-align: center;
+        .note {
+            background-color: #eef5ff;
+            color: #5d8fe4;
+            border-left: 5px solid #5d8fe4;
         }
-        a {
-            color: #004b8d;
-            text-decoration: none;
+        .warning {
+            background-color: #ffe6e6;
+            color: #d9534f;
+            border-left: 5px solid #d9534f;
         }
+        /* Table of Contents Styles */
         .toc {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             border: 1px solid #ddd;
             padding: 20px;
-            background-color: #e6f7ff;
+            background-color: #eef5ff;
             border-radius: 8px;
         }
         .toc a {
             display: block;
-            margin-bottom: 5px;
             font-size: 1.1em;
+            color: #4c7cc4;
+            text-decoration: none;
+            margin-bottom: 5px;
         }
-        blockquote {
-            background-color: #f0f8ff;
-            border-left: 5px solid #004b8d;
-            padding: 10px;
-            margin: 20px 0;
+        .toc a:hover {
+            text-decoration: underline;
         }
+        /* Code Box */
         pre {
-            background-color: #f4f7fc;
+            background-color: #f7faff;
             border: 1px solid #ddd;
             padding: 10px;
             border-radius: 5px;
             white-space: pre-wrap;
             word-wrap: break-word;
+            font-size: 1em;
+            color: #4c7cc4;
+        }
+        /* Back Button */
+        .back-btn {
+            margin-top: 30px;
+            display: inline-block;
+            background-color: #5d8fe4;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .back-btn:hover {
+            background-color: #4c7cc4;
         }
     </style>
 </head>
@@ -106,36 +145,40 @@
         <!-- Step 1 -->
         <div id="step1" class="step">
             <h2>Step 1: Create a GitHub Account & Repository</h2>
-            <p><strong>Welcome!</strong> We're about to dive into creating your very own personal website using GitHub Pages. Don’t worry if this feels overwhelming — we're here to guide you step by step. Let’s start by creating a GitHub account (if you don’t have one) and your first repository.</p>
+            <h3>Purpose</h3>
+            <p>This step will help you set up a GitHub account and create a repository where your website files will be stored.</p>
+            <p><strong>Welcome!</strong> Let’s start by creating a GitHub account (if you don’t have one) and setting up your first repository.</p>
             
-            <p><strong>Creating an Account:</strong> If you don’t already have a GitHub account, go to <a href="https://github.com">GitHub.com</a> and sign up. It's free! Once you've registered, log in to your new account.</p>
+            <p><strong>Creating an Account:</strong> If you don’t already have a GitHub account, go to <a href="https://github.com" target="_blank">GitHub.com</a> and sign up. It's free! Once registered, log in to your new account.</p>
 
-            <p><strong>Creating Your Repository:</strong> Now, click on the “New Repository” button (you can find it on your dashboard after logging in).</p>
-            <blockquote><em>Important:</em> You must name your repository like this: <strong>yourusername.github.io</strong>, replacing "yourusername" with your actual GitHub username. This exact name is how GitHub knows you’re creating a website.</blockquote>
+            <p><strong>Creating Your Repository:</strong> Click on the “New Repository” button on your dashboard after logging in.</p>
+            <div class="note">Important: Name your repository like this: <strong>yourusername.github.io</strong>. Replace "yourusername" with your actual GitHub username.</div>
             <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot3.PNG?raw=true" alt="Screenshot of creating a new repository on GitHub">
-            <p class="note">Tip: Make sure the repository is set to <strong>public</strong>, so your website will be visible to everyone!</p>
+            <div class="note">Tip: Make sure the repository is set to <strong>public</strong>, so your website will be visible to everyone!</div>
         </div>
 
         <!-- Step 2 -->
         <div id="step2" class="step">
             <h2>Step 2: Set Up GitHub Pages</h2>
-            <p>Great job creating your repository! Now let’s set it up as a GitHub Pages site.</p>
+            <h3>Purpose</h3>
+            <p>This step will help you configure your GitHub Pages settings to publish your site.</p>
 
             <p>Go to your repository’s settings by clicking on the “Settings” tab. Scroll down until you find the "GitHub Pages" section.</p>
 
             <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot8.PNG?raw=true" alt="Screenshot of GitHub Pages setup in settings">
-            <blockquote>Under “Source”, select the <strong>main</strong> branch (this is where all your code and changes will go).</blockquote>
+            <div class="note">Under “Source”, select the <strong>main</strong> branch (this is where all your code and changes will go).</div>
 
-            <p class="note">Be patient: It might take up to 5 minutes for your new site to become available online. Refresh the page after a few minutes to check.</p>
+            <div class="note">It might take up to 5 minutes for your new site to become available. Refresh the page after a few minutes to check.</div>
         </div>
 
         <!-- Step 3 -->
         <div id="step3" class="step">
             <h2>Step 3: Customize Your 'About Me' Page</h2>
-            <p>Now for the fun part — let's add some content to your website! You’ll need to edit the default <code>index.html</code> file. Think of this as the homepage for your site, where you’ll introduce yourself.</p>
+            <h3>Purpose</h3>
+            <p>This step allows you to personalize your page content by editing your default <code>index.html</code> file.</p>
 
-            <p>To start, click on the <strong>index.html</strong> file in your repository. Now, replace the placeholder text with your own information.</p>
-            <blockquote><em>Pro Tip:</em> Make sure to replace the "username" placeholders with your actual GitHub username.</blockquote>
+            <p>Click on the <strong>index.html</strong> file in your repository. Replace the placeholder text with your own information.</p>
+            <div class="note">Pro Tip: Replace the "username" placeholders with your actual GitHub username.</div>
 
             <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot5.PNG?raw=true" alt="Editing index.html on GitHub">
             
@@ -176,29 +219,30 @@
 &lt;/html&gt;
             </pre>
 
-            <p>This is just a starting point! Feel free to customize it as you wish by adding more sections, updating the links, or even styling it with CSS later.</p>
-
-            <p class="note">Remember to organize your content with headings (like <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code>) and bullet points to keep it neat and readable.</p>
+            <p class="note">Feel free to customize the content by adding more sections or CSS styling later.</p>
         </div>
 
         <!-- Step 4 -->
         <div id="step4" class="step">
             <h2>Step 4: Commit and Publish</h2>
-            <p>Ready to see your changes live? You’re almost there! After editing your <code>index.html</code> file, scroll to the top and click the <strong>“Commit changes”</strong> button.</p>
+            <h3>Purpose</h3>
+            <p>Commit your changes to publish your new 'About Me' page live on GitHub Pages.</p>
+
+            <p>After editing your <code>index.html</code> file, scroll to the top and click the <strong>“Commit changes”</strong> button.</p>
 
             <img src="https://github.com/DrewTico/DrewTico.github.io/blob/main/Screenshot6.PNG?raw=true" alt="Committing changes on GitHub">
-            <blockquote>Make sure to add a meaningful commit message (e.g., “Updated About Me page”) to keep track of changes.</blockquote>
+            <div class="note">Make sure to add a meaningful commit message (e.g., “Updated About Me page”) to keep track of changes.</div>
             
-            <p class="note">Once committed, it may take a minute or two for the changes to appear on your live site. Just refresh your browser after a bit to see the magic happen!</p>
+            <div class="note">It may take a minute or two for changes to appear live. Refresh your browser after a bit to see the results.</div>
         </div>
 
         <!-- Troubleshooting -->
         <div id="troubleshooting" class="step">
             <h2>Troubleshooting</h2>
-            <p>If something’s not working quite right, don’t panic! Here are a few common issues and how to solve them:</p>
+            <p>If something isn’t working, try these solutions:</p>
             <ul>
                 <li><strong>Website not showing up:</strong> Wait a few minutes, then refresh. It can take time for GitHub Pages to publish the site.</li>
-                <li><strong>Changes not appearing:</strong> Double-check that you’ve committed your changes to the correct branch (usually <em>main</em>).</li>
+                <li><strong>Changes not appearing:</strong> Double-check that you’ve committed your changes to the main branch.</li>
                 <li><a href="troubleshooting.html">Need more help? Visit the full troubleshooting page here.</a></li>
             </ul>
         </div>
