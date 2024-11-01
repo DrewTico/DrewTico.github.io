@@ -5,92 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My GitHub Page</title>
     <style>
+        /* Body and Background Styling */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(120deg, #f093fb, #f5576c, #4facfe, #00f2fe);
-            background-size: 400% 400%;
-            animation: gradientAnimation 15s ease infinite;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            background-size: 200% 200%;
+            animation: gradientShift 12s ease infinite;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
+            overflow: hidden;
         }
 
-        @keyframes gradientAnimation {
+        @keyframes gradientShift {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
 
+        /* Container Styling */
         .cover-container {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.15);
-            padding: 60px;
-            border-radius: 15px;
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
-
         .cover-container:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
+            background-color: rgba(255, 255, 255, 0.15);
         }
 
+        /* Text Styling */
         h1 {
-            font-size: 4em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            font-size: 3.5em;
+            margin: 0 0 10px;
+            color: #ffffff;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
         }
-
         h2 {
-            font-size: 1.5em;
-            margin-bottom: 40px;
-            color: #dddddd;
+            font-size: 1.3em;
+            font-weight: 300;
+            color: #e0e0e0;
             font-style: italic;
+            margin-bottom: 30px;
         }
-
         p {
-            font-size: 1.8em;
-            margin-bottom: 40px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            font-size: 1.2em;
+            margin: 20px 0 40px;
+            max-width: 600px;
+            line-height: 1.6;
+            color: #f0f0f0;
         }
 
+        /* Button Styling */
         .btn {
             padding: 15px 40px;
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: white;
-            background-color: #007acc;
+            background-color: #1e88e5;
             border: none;
-            border-radius: 8px;
+            border-radius: 50px;
             text-decoration: none;
-            margin: 10px;
-            display: inline-block;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
-
         .btn:hover {
-            background-color: #005f99;
-            transform: scale(1.1);
+            background-color: #1565c0;
+            transform: scale(1.05);
         }
 
+        /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
-                font-size: 3em;
+                font-size: 2.8em;
             }
-
             h2 {
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
-
             p {
-                font-size: 1.2em;
+                font-size: 1em;
+                margin-bottom: 30px;
             }
-
             .btn {
-                font-size: 1.2em;
+                font-size: 1em;
+                padding: 12px 30px;
             }
         }
     </style>
@@ -99,7 +102,7 @@
     <div class="cover-container">
         <h1>Welcome to My GitHub Page</h1>
         <h2>Andrew Castro-Guerrero</h2>
-        <p>Explore my projects, learn more, and connect with me!</p>
+        <p>Explore my projects, learn more about my work, and connect with me on my journey!</p>
         <a href="introduction.html" class="btn">Introduction</a>
     </div>
 </body>
