@@ -11,43 +11,34 @@
             padding: 0;
             height: 100%;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            background-size: 200% 200%;
-            animation: gradientShift 12s ease infinite;
+            background-color: #f0f4fb; /* Consistent background color */
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: #333; /* Consistent text color */
             text-align: center;
-        }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
         }
 
         /* Container Styling */
         .cover-container {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: #ffffff; /* White background for container */
             padding: 60px 40px;
-            border-radius: 20px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, background-color 0.3s ease;
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto;
             position: relative;
         }
         .cover-container:hover {
             transform: translateY(-8px);
-            background-color: rgba(255, 255, 255, 0.15);
         }
 
         /* Background Icons Styling */
         .background-icon {
-            font-size: 4em;
-            color: rgba(255, 235, 59, 0.3); /* Soft yellow with opacity */
+            font-size: 3.5em;
+            color: rgba(93, 143, 228, 0.15); /* Subtle blue color for icons */
             position: absolute;
             z-index: -1; /* Behind the text box */
             transition: transform 0.3s ease, opacity 0.3s ease;
@@ -62,7 +53,7 @@
             }
         }
         .background-icon {
-            animation: float 4s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
         }
 
         /* Left Side Icons */
@@ -101,10 +92,9 @@
 
         /* Text Styling */
         h1 {
-            font-size: 3.2em;
+            font-size: 2.8em;
             margin: 0 0 10px;
-            color: #ffffff;
-            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+            color: #5d8fe4; /* Consistent blue color for headings */
         }
         h1 span {
             font-weight: bold;
@@ -113,38 +103,38 @@
         h2 {
             font-size: 1.3em;
             font-weight: 300;
-            color: #e0e0e0;
+            color: #555;
             font-style: italic;
             margin-bottom: 30px;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin: 20px 0 40px;
             max-width: 600px;
             line-height: 1.6;
-            color: #f0f0f0;
+            color: #555;
         }
 
         /* Button Styling */
         .btn {
-            padding: 15px 40px;
-            font-size: 1.2em;
+            padding: 12px 30px;
+            font-size: 1.1em;
             color: white;
-            background-color: #1e88e5;
+            background-color: #5d8fe4; /* Consistent blue color for buttons */
             border: none;
-            border-radius: 50px;
+            border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .btn:hover {
-            background-color: #1565c0;
+            background-color: #4c7cc4;
             transform: scale(1.05);
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.6em;
+                font-size: 2.4em;
             }
             h2 {
                 font-size: 1.1em;
@@ -155,7 +145,7 @@
             }
             .btn {
                 font-size: 1em;
-                padding: 12px 30px;
+                padding: 10px 25px;
             }
         }
     </style>
