@@ -51,31 +51,38 @@
             position: absolute;
             z-index: -1; /* Behind the text box */
         }
+        /* Left Side Icons */
         .icon-laptop {
             top: 5%;
             left: 10%;
             transform: rotate(-15deg);
         }
-        .icon-globe {
-            bottom: 10%;
-            right: 15%;
-            transform: rotate(10deg);
-        }
         .icon-cloud {
-            top: 20%;
-            right: 5%;
-            transform: rotate(-5deg);
+            top: 40%;
+            left: 15%;
+            transform: rotate(-10deg);
         }
-        .icon-server {
-            bottom: 20%;
+        .icon-code {
+            bottom: 10%;
             left: 5%;
             transform: rotate(5deg);
         }
-        .icon-code {
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(-10deg);
-            opacity: 0.6; /* Slightly transparent */
+
+        /* Right Side Icons */
+        .icon-globe {
+            top: 15%;
+            right: 15%;
+            transform: rotate(10deg);
+        }
+        .icon-server {
+            bottom: 5%;
+            right: 10%;
+            transform: rotate(-5deg);
+        }
+        .icon-database {
+            top: 60%;
+            right: 20%;
+            transform: rotate(8deg);
         }
 
         /* Text Styling */
@@ -142,10 +149,11 @@
 <body>
     <!-- Background Icons -->
     <div class="background-icon icon-laptop">💻</div> <!-- Mini Laptop -->
-    <div class="background-icon icon-globe">🌐</div> <!-- Globe -->
     <div class="background-icon icon-cloud">☁️</div> <!-- Cloud -->
-    <div class="background-icon icon-server">🖥️</div> <!-- Server -->
     <div class="background-icon icon-code">{"<"}code{">"}</div> <!-- Code Snippet -->
+    <div class="background-icon icon-globe">🌐</div> <!-- Globe -->
+    <div class="background-icon icon-server">🖥️</div> <!-- Server -->
+    <div class="background-icon icon-database">🗄️</div> <!-- Database -->
 
     <div class="cover-container">
         <h1>How to Create a GitHub Page for an <span>About Me</span></h1>
