@@ -35,24 +35,42 @@
             border-radius: 20px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, background-color 0.3s ease;
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
+            position: relative;
         }
         .cover-container:hover {
             transform: translateY(-8px);
             background-color: rgba(255, 255, 255, 0.15);
         }
 
+        /* Symbols Styling */
+        .icon {
+            font-size: 2em;
+            position: absolute;
+            color: #ffeb3b;
+        }
+        .icon-left {
+            left: 10px;
+            top: 20px;
+            transform: rotate(-15deg);
+        }
+        .icon-right {
+            right: 10px;
+            top: 20px;
+            transform: rotate(15deg);
+        }
+
         /* Text Styling */
         h1 {
-            font-size: 3.5em;
+            font-size: 3.2em;
             margin: 0 0 10px;
             color: #ffffff;
             text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
         }
         h1 span {
             font-weight: bold;
-            text-decoration: underline; /* Underline and bold */
+            text-decoration: underline;
         }
         h2 {
             font-size: 1.3em;
@@ -88,7 +106,7 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.8em;
+                font-size: 2.6em;
             }
             h2 {
                 font-size: 1.1em;
@@ -106,6 +124,10 @@
 </head>
 <body>
     <div class="cover-container">
+        <!-- Symbols -->
+        <div class="icon icon-left">💻</div> <!-- Mini Laptop -->
+        <div class="icon icon-right">🌐</div> <!-- Globe -->
+
         <h1>How to Create a GitHub Page for an <span>About Me</span></h1>
         <h2>Andrew Castro-Guerrero</h2>
         <p>Learn step-by-step how to set up and personalize your own "About Me" page on GitHub Pages. Showcase your background, projects, and skills with a professional, personal website.</p>
@@ -113,3 +135,4 @@
     </div>
 </body>
 </html>
+
