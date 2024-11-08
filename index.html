@@ -47,19 +47,23 @@
         /* Symbols Styling */
         .icon {
             font-size: 2em;
-            position: absolute;
             color: #ffeb3b;
+            opacity: 0.7;
+            position: absolute;
+            transition: transform 0.3s ease, opacity 0.3s ease;
         }
-        .icon-left {
-            left: 10px;
-            top: 20px;
-            transform: rotate(-15deg);
+        .icon-pop {
+            font-size: 2.5em;
+            opacity: 1;
+            transform: scale(1.2);
         }
-        .icon-right {
-            right: 10px;
-            top: 20px;
-            transform: rotate(15deg);
-        }
+        /* Positioned Icons */
+        .icon-laptop { top: 10%; left: 5%; transform: rotate(-15deg); }
+        .icon-html { bottom: 15%; right: 10%; transform: rotate(10deg); }
+        .icon-globe { top: 50%; left: 85%; transform: rotate(-5deg); }
+        .icon-laptop-pop { bottom: 5%; left: 40%; transform: rotate(15deg); }
+        .icon-html-pop { top: 20%; right: 30%; transform: rotate(-20deg); }
+        .icon-globe-pop { bottom: 20%; left: 10%; transform: rotate(25deg); }
 
         /* Text Styling */
         h1 {
@@ -124,9 +128,13 @@
 </head>
 <body>
     <div class="cover-container">
-        <!-- Symbols -->
-        <div class="icon icon-left">💻</div> <!-- Mini Laptop -->
-        <div class="icon icon-right">🌐</div> <!-- Globe -->
+        <!-- Distributed Icons -->
+        <div class="icon icon-laptop">💻</div> <!-- Mini Laptop -->
+        <div class="icon icon-html">&lt;HTML&gt;</div> <!-- HTML Letters -->
+        <div class="icon icon-globe">🌐</div> <!-- Globe -->
+        <div class="icon icon-laptop-pop">💻</div> <!-- Pop-out Mini Laptop -->
+        <div class="icon icon-html-pop">&lt;HTML&gt;</div> <!-- Pop-out HTML Letters -->
+        <div class="icon icon-globe-pop">🌐</div> <!-- Pop-out Globe -->
 
         <h1>How to Create a GitHub Page for an <span>About Me</span></h1>
         <h2>Andrew Castro-Guerrero</h2>
@@ -135,4 +143,3 @@
     </div>
 </body>
 </html>
-
