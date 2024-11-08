@@ -44,26 +44,39 @@
             background-color: rgba(255, 255, 255, 0.15);
         }
 
-        /* Symbols Styling */
-        .icon {
-            font-size: 2em;
-            color: #ffeb3b;
-            opacity: 0.7;
+        /* Background Icons Styling */
+        .background-icon {
+            font-size: 4em;
+            color: rgba(255, 235, 59, 0.3); /* Soft yellow with opacity */
             position: absolute;
-            transition: transform 0.3s ease, opacity 0.3s ease;
+            z-index: -1; /* Behind the text box */
         }
-        .icon-pop {
-            font-size: 2.5em;
-            opacity: 1;
-            transform: scale(1.2);
+        .icon-laptop {
+            top: 5%;
+            left: 10%;
+            transform: rotate(-15deg);
         }
-        /* Positioned Icons */
-        .icon-laptop { top: 10%; left: 5%; transform: rotate(-15deg); }
-        .icon-html { bottom: 15%; right: 10%; transform: rotate(10deg); }
-        .icon-globe { top: 50%; left: 85%; transform: rotate(-5deg); }
-        .icon-laptop-pop { bottom: 5%; left: 40%; transform: rotate(15deg); }
-        .icon-html-pop { top: 20%; right: 30%; transform: rotate(-20deg); }
-        .icon-globe-pop { bottom: 20%; left: 10%; transform: rotate(25deg); }
+        .icon-globe {
+            bottom: 10%;
+            right: 15%;
+            transform: rotate(10deg);
+        }
+        .icon-cloud {
+            top: 20%;
+            right: 5%;
+            transform: rotate(-5deg);
+        }
+        .icon-server {
+            bottom: 20%;
+            left: 5%;
+            transform: rotate(5deg);
+        }
+        .icon-code {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-10deg);
+            opacity: 0.6; /* Slightly transparent */
+        }
 
         /* Text Styling */
         h1 {
@@ -127,15 +140,14 @@
     </style>
 </head>
 <body>
-    <div class="cover-container">
-        <!-- Distributed Icons -->
-        <div class="icon icon-laptop">💻</div> <!-- Mini Laptop -->
-        <div class="icon icon-html">&lt;HTML&gt;</div> <!-- HTML Letters -->
-        <div class="icon icon-globe">🌐</div> <!-- Globe -->
-        <div class="icon icon-laptop-pop">💻</div> <!-- Pop-out Mini Laptop -->
-        <div class="icon icon-html-pop">&lt;HTML&gt;</div> <!-- Pop-out HTML Letters -->
-        <div class="icon icon-globe-pop">🌐</div> <!-- Pop-out Globe -->
+    <!-- Background Icons -->
+    <div class="background-icon icon-laptop">💻</div> <!-- Mini Laptop -->
+    <div class="background-icon icon-globe">🌐</div> <!-- Globe -->
+    <div class="background-icon icon-cloud">☁️</div> <!-- Cloud -->
+    <div class="background-icon icon-server">🖥️</div> <!-- Server -->
+    <div class="background-icon icon-code">{"<"}code{">"}</div> <!-- Code Snippet -->
 
+    <div class="cover-container">
         <h1>How to Create a GitHub Page for an <span>About Me</span></h1>
         <h2>Andrew Castro-Guerrero</h2>
         <p>Learn step-by-step how to set up and personalize your own "About Me" page on GitHub Pages. Showcase your background, projects, and skills with a professional, personal website.</p>
